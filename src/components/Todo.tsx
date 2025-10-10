@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Trash2, Edit, Check, X } from "lucide-react";
-import GradientText from "./GradientText";
+import GradientText from "./ui/GradientText";
 
 export default function Todo() {
   const [tasks, setTasks] = useState(() => {
@@ -86,7 +86,7 @@ export default function Todo() {
   const visibleTasks = getTasks();
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-r from-blue-600 to-purple-600 py-8 px-4 overflow-hidden">
+    <div className="relative min-h-screen bg-[#1a1a1a] py-8 px-4 overflow-hidden">
       <div className="max-w-4xl mx-auto relative z-10">
         <div className="bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
           <h1 className="text-3xl font-bold text-blue-500 bg-clip-text mb-6">
